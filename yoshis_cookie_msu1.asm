@@ -12,10 +12,10 @@ constant sound_routine_counter = $1d6
 
 // MSU-1 consts
 constant MSU1_STATUS = $2000
+constant MSU1_ID     = $2002
 constant MSU1_TRACK  = $2004
 constant MSU1_VOLUME = $2006
 constant MSU1_PLAY   = $2007
-constant MSU1_ID     = $2002
 
 seek($d8000)
 function play_music_REDIRECT {
@@ -102,6 +102,3 @@ done:
 	plp
 	rtl
 }
-
-db "Zumi"
-
